@@ -1,8 +1,13 @@
 {
   "name": "portfolio-react",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": {
+    "name": "DimasAdiPutra",
+    "url": "https://github.com/DimasAdiPutra/portfolio-react"
+  },
+  "description": "Sebuah Website yang dibuat dengan React Js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
