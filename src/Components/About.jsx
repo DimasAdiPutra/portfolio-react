@@ -3,7 +3,9 @@ import Welcome from '../assets/Welcome.svg'
 
 const About = () => {
 	return (
-		<main className="px-4 min-h-screen flex flex-col justify-center md:px-10 lg:min-h-fit lg:pt-10 max-w-screen-2xl ">
+		<main
+			id="about"
+			className="px-4 min-h-screen flex flex-col justify-center md:px-10 lg:min-h-fit lg:pt-10 max-w-screen-2xl ">
 			<h1 className="text-heading-h2 text-center px-5 mb-10">
 				Mari berkenalan dengan saya!
 			</h1>

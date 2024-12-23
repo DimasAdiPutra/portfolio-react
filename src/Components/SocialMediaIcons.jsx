@@ -1,29 +1,109 @@
-import Instagram from '../assets/mdi_instagram.svg'
-import Facebook from '../assets/ri_facebook-fill.svg'
-import Linkedin from '../assets/ri_linkedin-fill.svg'
-import Github from '../assets/mdi_github.svg'
-import Dribbble from '../assets/hugeicons_dribbble.svg'
+import PropTypes from 'prop-types'
 
-const SocialMediaIcons = () => {
+const SocialMediaIcons = ({ light = false, className = '' }) => {
 	return (
-		<div className="flex justify-between w-min min-w-44">
+		<div className={`flex justify-between w-min min-w-44 ${className}`}>
 			<a href="#">
-				<img src={Instagram} alt="Instagram Icon" className="hover:scale-110" />
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					className="hover:scale-125 transition-transform">
+					<path
+						d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
+						fill="#2B2D42"
+						className={light ? 'fill-main' : ''}
+					/>
+				</svg>
 			</a>
 			<a href="#">
-				<img src={Facebook} alt="Facebook Icon" className="hover:scale-110" />
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					className="hover:scale-125 transition-transform">
+					<path
+						d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z"
+						fill="#2B2D42"
+						className={light ? 'fill-main' : ''}
+					/>
+				</svg>
 			</a>
 			<a href="#">
-				<img src={Linkedin} alt="Linkedin Icon" className="hover:scale-110" />
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					className="hover:scale-125 transition-transform">
+					<path
+						d="M6.94 5.00002C6.93974 5.53046 6.72877 6.03906 6.35351 6.41394C5.97825 6.78883 5.46943 6.99929 4.939 6.99902C4.40857 6.99876 3.89997 6.78779 3.52508 6.41253C3.15019 6.03727 2.93974 5.52846 2.94 4.99802C2.94027 4.46759 3.15123 3.95899 3.52649 3.5841C3.90175 3.20922 4.41057 2.99876 4.941 2.99902C5.47143 2.99929 5.98004 3.21026 6.35492 3.58552C6.72981 3.96078 6.94027 4.46959 6.94 5.00002ZM7 8.48002H3V21H7V8.48002ZM13.32 8.48002H9.34V21H13.28V14.43C13.28 10.77 18.05 10.43 18.05 14.43V21H22V13.07C22 6.90002 14.94 7.13002 13.28 10.16L13.32 8.48002Z"
+						fill="#2B2D42"
+						className={light ? 'fill-main' : ''}
+					/>
+				</svg>
 			</a>
 			<a href="#">
-				<img src={Github} alt="Github Icon" className="hover:scale-110" />
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					className="hover:scale-125 transition-transform">
+					<path
+						d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26V21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2Z"
+						fill="#2B2D42"
+						className={light ? 'fill-main' : ''}
+					/>
+				</svg>
 			</a>
 			<a href="#">
-				<img src={Dribbble} alt="Dribbble Icon" className="hover:scale-110" />
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					className="hover:scale-125 transition-transform">
+					<path
+						d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+						stroke="#2B2D42"
+						strokeWidth="1.5"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						className={light ? 'stroke-main' : ''}
+					/>
+					<path
+						d="M22 13.264C21.0592 13.0881 20.1041 12.9997 19.147 13C13.795 13 9.034 15.742 6 20M19 5C15.87 8.667 11.168 11 5.91 11C4.564 11 3.255 10.847 2 10.559"
+						stroke="#2B2D42"
+						strokeWidth="1.5"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						className={light ? 'stroke-main' : ''}
+					/>
+					<path
+						d="M14.618 22C14.8727 20.7629 15.0007 19.5031 15 18.24C15 11.926 11.834 6.347 7 3"
+						stroke="#2B2D42"
+						strokeWidth="1.5"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						className={light ? 'stroke-main' : ''}
+					/>
+				</svg>
 			</a>
 		</div>
 	)
+}
+
+SocialMediaIcons.propTypes = {
+	light: PropTypes.bool,
+	className: PropTypes.string,
 }
 
 export default SocialMediaIcons

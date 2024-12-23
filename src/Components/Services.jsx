@@ -8,7 +8,9 @@ import MoneyIcon from '../assets/money.svg'
 
 const Services = () => {
 	return (
-		<section className="px-4 min-h-screen flex flex-col pt-10 lg:px-10 xl:min-h-fit lg:pt-40 items-center md:justify-center max-w-screen-2xl">
+		<section
+			id="services"
+			className="px-4 min-h-screen flex flex-col pt-40 lg:px-10 xl:min-h-fit lg:pt-40 items-center md:justify-center max-w-screen-2xl">
 			<h1 className="text-heading-h2 text-center mb-10 max-w-72 md:mb-20 xl:max-w-none">
 				Kenapa bekerjasama dengan saya?
 			</h1>
