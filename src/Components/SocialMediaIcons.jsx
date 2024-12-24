@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 const SocialMediaIcons = ({ light = false, className = '' }) => {
 	return (
 		<div className={`flex justify-between w-min min-w-44 ${className}`}>
-			<a href="#">
+			{/* Instagram */}
+			<a href="https://instagram.com/dmsadputr">
 				<svg
 					width="24"
 					height="24"
@@ -18,7 +19,9 @@ const SocialMediaIcons = ({ light = false, className = '' }) => {
 					/>
 				</svg>
 			</a>
-			<a href="#">
+
+			{/* Facebook */}
+			<a href="https://facebook.com/DimasAdiPutra03">
 				<svg
 					width="24"
 					height="24"
@@ -33,7 +36,9 @@ const SocialMediaIcons = ({ light = false, className = '' }) => {
 					/>
 				</svg>
 			</a>
-			<a href="#">
+
+			{/* Linkedin */}
+			<a href="https://linkedin.com/in/dimasadiputra123">
 				<svg
 					width="24"
 					height="24"
@@ -48,7 +53,9 @@ const SocialMediaIcons = ({ light = false, className = '' }) => {
 					/>
 				</svg>
 			</a>
-			<a href="#">
+
+			{/* Github */}
+			<a href="https://github.com/DimasAdiPutra">
 				<svg
 					width="24"
 					height="24"
@@ -63,7 +70,9 @@ const SocialMediaIcons = ({ light = false, className = '' }) => {
 					/>
 				</svg>
 			</a>
-			<a href="#">
+
+			{/* Dribbble */}
+			<a href="https://dribbble.com/DmsAdPutr">
 				<svg
 					width="24"
 					height="24"

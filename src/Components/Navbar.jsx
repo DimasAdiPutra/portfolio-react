@@ -13,7 +13,7 @@ const Navbar = () => {
 		<nav className="bg-second h-20 w-screen px-4 shadow-md sticky top-0 md:px-10 flex justify-center">
 			<div className="flex w-full h-full items-center justify-between relative max-w-screen-xl">
 				{/* Logo */}
-				<a href="#" className="text-logo font-logo text-main relative z-50">
+				<a href="#home" className="text-logo font-logo text-main relative z-50">
 					AdiPutra
 				</a>
 
@@ -22,7 +22,9 @@ const Navbar = () => {
 					className={`w-8 h-7 flex flex-col justify-between relative z-50 ${
 						isActive ? 'active' : 'not-active'
 					} md:hidden`}
-					onClick={hamburgerMenu}>
+					onClick={hamburgerMenu}
+					aria-label={isActive ? 'Close menu' : 'Open menu'}
+					aria-expanded={isActive ? 'true' : 'false'}>
 					<span className="block w-full h-1 relative rounded-md bg-main"></span>
 					<span className="block w-full h-1 relative rounded-md bg-main"></span>
 					<span className="block w-full h-1 relative rounded-md bg-main"></span>

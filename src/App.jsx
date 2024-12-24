@@ -6,9 +6,20 @@ import Navbar from './Components/Navbar'
 import Projects from './Components/Projects'
 import Services from './Components/Services'
 
+// React-Helmet
+import { Helmet } from 'react-helmet-async'
+
+// import image profile
+import profileImg from './assets/profile.webp'
+
 function App() {
 	return (
 		<>
+			{/* Helmet */}
+			<Helmet>
+				<link rel="preload" href={profileImg} as="image" type="image/png" />
+			</Helmet>
+
 			{/* Navbar */}
 			<Navbar />
 			{/* Container */}
